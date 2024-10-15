@@ -95,6 +95,15 @@ class MapScreen extends StatelessWidget {
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                   const SizedBox(height: 16),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue[900],
+                      minimumSize: const Size(double.infinity, 40),
+                    ),
+                    child: const Text('Ver más información',
+                        style: TextStyle(color: Colors.white)),
+                  ),
                 ],
               ),
             ),
