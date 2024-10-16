@@ -7,10 +7,16 @@ import 'package:widgets_app/domain/entities/trayecto.dart';
 
 class MyTrayectoDatasource extends TrayectoDatasource {
   @override
-  Future<String> getTrayecto(String userID) {
+  Future<List<Trayecto>> getTrayectos(String userID) async {
     // Implementación del método
     // Por ejemplo, podrías obtener los trayectos desde una API o una base de datos
-    const String tate = '';
-    return Future.value(tate);
+    List<Trayecto> trayectos = [
+      Trayecto(trayecto: 'Trayecto 1'),
+      Trayecto(trayecto: 'Trayecto 2'),
+      Trayecto(trayecto: 'Trayecto 3'),
+    ];
+    await Future.delayed(const Duration(seconds: 1));
+
+    return trayectos;
   }
 }

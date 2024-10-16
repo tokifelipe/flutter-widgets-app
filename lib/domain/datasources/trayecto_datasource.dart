@@ -1,6 +1,7 @@
-//Las clases que implementen TrayectoDatasource van a ser datasource's
+////El repositorio terminará llamando al datasource
 import 'package:widgets_app/domain/entities/trayecto.dart';
 
 abstract class TrayectoDatasource {
-  Future<String> getTrayecto(String userID);
+  //Vas a recibir una lista de trayectos y vas a pedir el id del pasajero?
+  Future<List<Trayecto>> getTrayectos(String userID);
 }
