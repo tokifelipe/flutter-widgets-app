@@ -1,11 +1,10 @@
 // Origen de dato: API
 import 'dart:core';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:widgets_app/domain/datasources/trayecto_datasource.dart';
 import 'package:widgets_app/domain/entities/trayecto.dart';
 
-class MyTrayectoDatasource extends TrayectoDatasource {
+class MyTrayectoDatasource implements TrayectoDatasource {
   @override
   Future<List<Trayecto>> getTrayectos(String userID) async {
     // Implementación del método
