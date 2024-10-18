@@ -10,7 +10,7 @@ class MyTrayectoDatasource implements TrayectoDatasource {
     // Implementación del método
     // Por ejemplo, podrías obtener los trayectos desde una API o una base de datos
     List<Trayecto> trayectos = [
-      Trayecto(trayecto: 'Trayecto 55'),
+      Trayecto(trayecto: 'Trayecto 55 dos'),
       Trayecto(trayecto: 'Trayecto 2'),
       Trayecto(trayecto: 'Trayecto 3'),
     ];
